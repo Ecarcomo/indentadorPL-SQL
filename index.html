@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indentador de PL/SQL</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        textarea {
+            width: 100%;
+            height: 200px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        #btn-reset{
+            padding: 3px 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Indentador de PL/SQL</h1>
+    <textarea id="input-sql" placeholder="Introduce aquí tu sentencia SQL..."></textarea>
+    <table cellspacing="15px">
+        <tr>
+            <td>
+                <button onclick="indentarSQL()">Indentar</button>
+            </td>
+            <td>
+                    <label>
+                        <input type="radio" id="indentarEstructura">Indentar Estructura
+                    </label> 
+                    <br>
+                    <label>
+                        <input type="radio" id="indentarQuerys">Indentar Querys
+                    </label>
+                    <br>
+                    <button id="btn-reset" onclick="reset()">reset</button>
+            </td>
+            <td  style="background-color:lightgray;">
+                <input type="number" id="size-indent" value="8"> Tamaño de indentacion</input>
+            </td>
+        </tr>
+    </table>
+    
+    <textarea id="output-sql" readonly placeholder="El SQL indentado aparecerá aquí..."></textarea>
+
+    <script src="script.js"></script>
+</body>
+</html>
