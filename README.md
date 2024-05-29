@@ -1,2 +1,2 @@
 # indentadorPL-SQL
-Applicacion para indentacion PL/SQL segùn preferencias de configuracion
+Aplicacion JS para indentacion PL/SQL segùn preferencias de configuracion
